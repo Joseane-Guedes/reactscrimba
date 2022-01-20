@@ -18,53 +18,17 @@ function Page() {
 }
 
 ReactDOM.render(<Page />, document.getElementById("root"));
- */
 //Challenge 1
+ */
 
 import React from "react";
 import ReactDOM from "react-dom";
+import Header from "./components/Header/Header"
+import MainContent from "./components/MainContent/MainContent"
+import Footer from "./components/Footer/Footer"
 import './styles.css'
 
-
-function Header() {
-  return (
-    <header>
-      <nav >
-        <img src="/images/reactlogo.png"  alt="React" />
-        <ul className="nav-items">
-          <li>Pricing</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-    </header>
-  );
-}
-
-function Footer() {
-  return (
-    <footer>
-      <small>@ 2022 JosieCodes development. All rights reserved</small>
-    </footer>
-  );
-}
-
-function MainContent() {
-  return (
-    <>
-      <h1>Reasons I'm excited to learn React</h1>
-      <ol>
-        <li> React is a popular library with an easier learning curve. </li>
-        <li>
-          React allows you to have a stronger opinion on how the code should be
-          organized.
-        </li>
-      </ol>
-    </>
-  );
-}
-
-function Page() {
+function App() {
   return (
     <div>
       <Header />
@@ -74,4 +38,5 @@ function Page() {
   );
 }
 
-ReactDOM.render(<Page />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
+

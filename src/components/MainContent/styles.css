@@ -1,0 +1,30 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+align-items: center;
+padding: 6rem;  
+color: black;
+width: auto;
+height: 100vh;
+background-color: palevioletred;
+}
+
+.reasons {
+  display: flex;
+  justify-content: center;
+  color: gold;
+}
+
+.items > li {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+  color: white;
+}
